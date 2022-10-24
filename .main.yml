@@ -18,4 +18,4 @@ jobs:
 
      #finally build your app with the latest command
       - name: Build and test with Maven
-        run: docker compose up
+        run: mvn clean verify -f simple-api/pom.xml
