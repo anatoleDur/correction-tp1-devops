@@ -1,0 +1,12 @@
+- name: Run Database
+  docker_container:
+    name: database
+    image: adurre1/repo_tp_devops:database
+    state: started
+    recreate: yes
+    env:
+      POSTGRES_DB: db
+      POSTGRES_USER: usr
+      POSTGRES_PASSWORD: pwd
+    networks:
+      - name: network

@@ -1,0 +1,9 @@
+- name: Run HTTPD
+  docker_container:
+    name: httpd
+    image: adurre1/repo_tp_devops:httpd
+    networks:
+      - name: network
+    ports:
+      - 80:80
+

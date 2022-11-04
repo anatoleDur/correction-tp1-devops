@@ -1,0 +1,7 @@
+- name: Run App
+  docker_container:
+    name: backend
+    image: adurre1/repo_tp_devops:simple-api
+    recreate: yes
+    networks:
+      - name: "network"
